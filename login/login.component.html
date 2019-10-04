@@ -1,0 +1,78 @@
+<mat-toolbar color="primary" class="navbar">
+        <div class="inp">SOUBHAGYA
+            <input type="text" class="form" >
+        </div>
+            
+        
+        <div>
+                   <span (click)="openDialog()">Login & Signup</span>
+                   <span>more</span>
+                   <span>Cart</span>
+                   
+       </div>
+      </mat-toolbar>
+      <mat-toolbar>
+          <div class="pox">
+          <span class="k">Electronics</span>
+          <span class="k">Tv application</span>
+          <span class="k">Men</span>
+          <span class="k">Women</span>
+          <span class="k">Home & furnitures</span>
+         
+          <span class="k">Offer zone</span>
+          <span class="k">Grocery</span>
+ 
+ 
+        </div>
+      </mat-toolbar>
+
+
+
+
+      <div id="container">
+        <div
+          ng2-carouselamos
+          class="slides-wrapper"
+          [items]="items"
+          [width]="900"
+          [$prev]="prev"
+          [$next]="next"
+          [$item]="item"
+        >
+        </div>
+      
+  
+      <ng-template #prev>
+        <img src="assets/left.jpg" class="mm" id="left" />
+      </ng-template>
+      <ng-template #next>
+        <img src="assets/right.jpg" class="mm" id="right" />
+      </ng-template>
+      <ng-template #item let-item let-i="index">
+  
+          <div class="items">
+            <img src="{{ item.name }}">
+          </div>
+  
+      </ng-template>
+
+
+      <mat-grid-list cols="2" rowHeight="2:1" >
+        <mat-grid-tile>
+          <img src="assets/fo.jpg"/>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <img src="assets/fo7.jpg"/>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <img src="assets/fo2.jpg"/>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <img src="assets/fo3.jpg"/>
+        </mat-grid-tile>
+      </mat-grid-list>
+    
+    
+    
+      
+    

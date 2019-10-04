@@ -1,0 +1,45 @@
+<mat-toolbar color="primary" class="navbar">
+    <div>SOUBHAGYA
+        <input type="text" class="form">
+    </div>
+        
+    
+    <div>
+               <span>Soubhagya</span>
+               
+               <span>Logout</span>
+                   
+               
+ </div>
+  </mat-toolbar>
+  
+<br><br>
+<div fxLayout="row" fxLayoutAlign="space-around center" class="item">
+
+<div fxFlex="20%" fxLayoutGap="5px" *ngFor="let product of boughtProducts">
+    <mat-card class="example-card">
+        <img mat-card-image src="{{product.imageUrl}}" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+                <h3>
+                        {{product.name}}
+                </h3>
+                <p>
+                    {{product.productOffer}}
+                </p>
+                <p>
+                        {{product.bank}}
+                </p>
+               
+               <h4>Price : {{product.price}}</h4>
+
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button color="warn" (click)="delete(product.name)">REMOVE ITEM</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+
+<mat-toolbar><b><p *ngIf="boughtProducts.length > 0 ">Total: {{total}}</p></b></mat-toolbar>
+
+
+</div>

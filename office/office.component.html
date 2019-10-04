@@ -1,0 +1,142 @@
+<mat-toolbar color="primary" class="navbar">
+    <button mat-raised-button color="accent">powerd by exmine</button>
+        
+    
+   <p class="time">Time Left :89:39</p>
+  </mat-toolbar>
+
+<div fxLayout="row"  fxLayoutGap="10px">
+    <div fxLayout="column"  fxFlex="80%">
+            <mat-tab-group>
+                    <mat-tab label="First">
+                            <mat-card class="example-card">
+                                    <mat-card-header>
+                                      <div mat-card-avatar class="example-header-image"></div>
+                                      <mat-card-title>Soubhagya</mat-card-title>
+                                      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                                    </mat-card-header>
+                               
+                                    <mat-card-content>
+                                      <p>
+                                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                                        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                                        bred for hunting.
+                                      </p>
+                                    </mat-card-content>
+                                  
+                                  </mat-card>
+                        
+                        </mat-tab>
+                    <mat-tab label="Second">
+                            <mat-card class="example-card">
+                                    <mat-card-header>
+                                      <div mat-card-avatar class="example-header-image"></div>
+                                      <mat-card-title>Soubhagya</mat-card-title>
+                                      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                                    </mat-card-header>
+                               
+                                    <mat-card-content>
+                                      <p>
+                                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                                        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                                        bred for hunting.
+                                      </p>
+                                    </mat-card-content>
+                                  
+                                  </mat-card>
+                    </mat-tab>
+                    <mat-tab label="Third">
+                            <mat-card class="example-card">
+                                    <mat-card-header>
+                                      <div mat-card-avatar class="example-header-image"></div>
+                                      <mat-card-title>Soubhagya</mat-card-title>
+                                      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                                    </mat-card-header>
+                               
+                                    <mat-card-content>
+                                      <p>
+                                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                                        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                                        bred for hunting.
+                                      </p>
+                                    </mat-card-content>
+                                  
+                                  </mat-card>
+                    </mat-tab>
+                  </mat-tab-group>
+                  <br>
+                 
+                  
+</div>
+
+
+<div fxLayout="column"  fxFlex="20%">
+      <p>selectted subject:physics 12</p>
+       <div   fxLayout="row" fxLayoutGap="1px">
+            <button mat-mini-fab color="primary">1</button>
+            <button mat-mini-fab color="primary">2</button>
+            <button mat-mini-fab color="primary">3</button>
+            <button mat-mini-fab color="primary">4</button>
+            <button mat-mini-fab color="primary">5</button>
+       </div>
+       <div   fxLayout="row" fxLayoutGap="1px">
+            <button mat-mini-fab color="primary">6</button>
+            <button mat-mini-fab color="primary">7</button>
+            <button mat-mini-fab color="primary">8</button>
+            <button mat-mini-fab color="primary">9</button>
+            <button mat-mini-fab color="primary">10</button>
+       </div>
+       <div   fxLayout="row" fxLayoutGap="1px">
+            <button mat-mini-fab color="primary">11</button>
+            <button mat-mini-fab color="primary">12</button>
+            <button mat-mini-fab color="primary">13</button>
+            <button mat-mini-fab color="primary">14</button>
+            <button mat-mini-fab color="primary">15</button>
+       </div>
+       <div   fxLayout="row"  fxLayoutGap="1px">
+            <button mat-mini-fab color="primary">16</button>
+            <button mat-mini-fab color="primary">17</button>
+            <button mat-mini-fab color="primary">18</button>
+            <button mat-mini-fab color="primary">19</button>
+            <button mat-mini-fab color="primary">20</button>
+       </div>
+       <div   fxLayout="row" fxLayoutGap="1px">
+            <button mat-mini-fab color="primary">21</button>
+            <button mat-mini-fab color="primary">22</button>
+            <button mat-mini-fab color="primary">23</button>
+            <button mat-mini-fab color="primary">24</button>
+            <button mat-mini-fab color="primary">25</button>
+       </div>
+       <div   fxLayout="row" fxLayoutGap="1px">
+            <button mat-mini-fab color="primary">26</button>
+            <button mat-mini-fab color="primary">27</button>
+            <button mat-mini-fab color="primary">28</button>
+            <button mat-mini-fab color="primary">29</button>
+            <button mat-mini-fab color="primary">30</button>
+       </div>
+       <br>
+       <button mat-raised-button color="primary">Submit exam</button><br>
+       <div   fxLayout="row" fxLayoutGap="3px">
+            <button mat-raised-button color="primary" (click)="openDialog()">Instruction</button>
+            <button mat-raised-button color="primary">Question</button>
+       </div>
+    
+    </div>
+    
+</div>
+
+<div   fxLayout="row" >
+        <div   fxLayout="column"  fxFlex="30%">
+                <div   fxLayout="row"  fxLayoutGap="4px">
+                        <button mat-raised-button color="warn" (click)="clear()">CLEAR</button>
+                        <button mat-raised-button color="primary" (click)="mark()">MARK FOR REVIEW</button>
+                </div>
+            </div>
+
+            <div   fxLayout="column"  fxFlex="30%">
+                    <div   fxLayout="row"   fxLayoutGap="4px">
+                            <button mat-raised-button color="warn"  (click)="prev()">PREVIOUS</button>
+                            <button mat-raised-button color="primary" (click)="save()">SAVE & NEXT</button>
+                    </div>
+                </div>
+</div>

@@ -1,0 +1,33 @@
+        <form class="example-form" *ngIf="loginVar">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Email-id" [(ngModel)]="username" name="username" required>
+            </mat-form-field>
+           <br>
+            <mat-form-field class="example-full-width">
+            <input matInput placeholder="Password" [(ngModel)]="password"type="password" name="password" required>
+            </mat-form-field><br>
+            <button mat-raised-button color="primary" (click)="login()">Login</button>
+            
+            <P>OR</P>
+            <button mat-raised-button color="accent" >Request OTP</button>
+            <p><a (click)="signup()">New to Flipkart? Create an account</a></p>
+     
+          </form>
+          
+
+
+
+          <form class="example-form" *ngIf="!loginVar">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Enter mobile no" [(ngModel)]="user" name="username" required>
+            </mat-form-field>
+           <br>
+            
+            <button mat-raised-button color="accent" (click)="account()">CONTINUE</button>
+            <br><br>
+            <button mat-raised-button routerLink=".">Existing User?Log in..</button>
+            <br>
+            <img src="assets/ss.jpg" class="soubhagya"/>
+          </form>
+          
+    

@@ -1,0 +1,69 @@
+.navbar{
+    justify-content: space-between;
+}
+span{
+     padding-right: 1rem;
+     margin-right: 65px;
+}
+.form{
+    width:340px;
+    height:20px;
+    
+}
+
+.example-container {
+    width: 100%;
+    height: 600px;
+    margin: 10px;
+    border: 1px solid #555;
+    margin-top: 3px;
+  }
+  .pox{
+      padding-left: 220px;
+  }
+  .k{
+      font-size: 17px;
+  }
+  .fo1{
+      width:400px;
+      height:305px;
+  }
+  .fo2{
+    width:400px;
+    height:321px;
+}
+.fo3{
+    width:400px;
+    height:321px;
+}
+.fo6{
+    width:400px;
+    height:290px;
+}
+  mat-card{
+      margin-top: 15px;
+  }
+  .pro1{
+      width:100%;
+      height:300px;
+  }
+  .im2{
+      width:345px;
+  }
+  .card2{
+      height:190px;
+  }
+  p{
+      text-align: center;
+  } 
+  a{
+      color:white;
+      text-decoration: none;
+  }   
+   /* a{
+    color:white;
+    text-decoration: none;
+}     */
+#el{
+    color:white;
+}
