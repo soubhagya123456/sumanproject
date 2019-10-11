@@ -24,13 +24,13 @@
     
   
      
-         <p><b><h3>Search here <input type="text"  [(ngModel)]="keyword"></h3></b></p> 
+         <p><b><h3>Search here <input type="text" ></h3></b></p> 
          <mat-divider></mat-divider>
      
 
    <div fxLayout="row" fxLayoutAlign="space-around center" class="item">
 
-    <div fxFlex="20%" fxLayoutGap="5px" *ngFor="let product of products | filter:keyword">
+    <div fxFlex="20%" fxLayoutGap="5px" >
         <mat-card class="example-card">
             <img mat-card-image src="{{product.imageUrl}}" alt="Photo of a Shiba Inu">
             <mat-card-content>
